@@ -9,7 +9,7 @@
 .header {
     height: 7rem;
     background-color: var(--color-white);
-    border-bottom: var(--color-grey-light-2);
+    border-bottom: var(--line);
     font-size: 1.4rem;
 
     display: flex;
@@ -19,6 +19,7 @@
 
 .content {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .sidebar {
@@ -33,8 +34,30 @@
 
 .hotel-view {
     background-color: var(--color-white);
-    
-    // TEST
-    height: 80rem;
+
     flex: 1;
+}
+
+.detail {
+    font-size: 1.4rem;
+    display: flex;
+    padding: 4.5rem;
+    background-color: var(--color-grey-light-1);
+    border-bottom: var(--line);
+}
+
+.description {
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    flex: 0 0 60%;
+    margin-right: 4.5rem;
+}
+
+.user-reviews {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
